@@ -33,7 +33,7 @@ models/*.pkl
 models/checkpoints/*
 
 # Environment
-.env
+.env.example
 .env.local
 
 # Large files
