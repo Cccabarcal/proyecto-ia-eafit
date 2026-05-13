@@ -33,8 +33,9 @@ models/*.pkl
 models/checkpoints/*
 
 # Environment
-.env.example
+.env              # NO SUBIR: keys reales
 .env.local
+# !.env.example   # INCLUIR: template de ejemplo
 
 # Large files
 *.pkl
