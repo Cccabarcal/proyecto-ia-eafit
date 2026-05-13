@@ -1,0 +1,45 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+RESUMEN DEL PREPROCESAMIENTO
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 DATASET ORIGINAL:
+  • Muestras: 4,424
+  • Features: 38
+
+🎯 TARGET BINARIZADO:
+  • Dropout (1): 1,421 casos
+  • No Dropout (0): 3,003 casos
+  • Proporción Dropout: 32.12%
+
+🔧 TRANSFORMACIONES APLICADAS:
+  ✓ Binarización del Target (Dropout vs No Dropout)
+  ✓ Manejo de valores nulos
+  ✓ Codificación de 0 variables categóricas
+  ✓ Escalado StandardScaler (μ≈0, σ≈1)
+
+📈 FEATURES FINALES: 36
+  • Todas numéricas
+  • Escaladas entre -3 y +3 (aprox.)
+
+✂️ DIVISIÓN DE DATOS (random_state=42, stratificado):
+
+  TRAINING SET (70%):
+    • Muestras: 3,096
+    • Dropout: 994 (32.1%)
+
+  VALIDATION SET (15%):
+    • Muestras: 664
+    • Dropout: 214 (32.2%)
+
+  TEST SET (15%):
+    • Muestras: 664
+    • Dropout: 213 (32.1%)
+
+📦 ARCHIVOS GENERADOS:
+  ✓ preprocessed_data.pkl (diccionario con todos los datos + objetos)
+  ✓ X_train.csv, X_val.csv, X_test.csv
+  ✓ y_train.csv, y_val.csv, y_test.csv
+
+✅ PREPROCESAMIENTO COMPLETADO
+═══════════════════════════════════════════════════════════════════════════════

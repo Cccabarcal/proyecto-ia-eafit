@@ -1,0 +1,44 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+CONCLUSIONES DEL ANÁLISIS EXPLORATORIO (EDA)
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 CARACTERÍSTICAS GENERALES DEL DATASET:
+  • Tamaño: 4,424 muestras × 37 características
+  • Valores nulos: 0 (sin faltantes críticos)
+  • Variables numéricas: 37
+  • Rango temporal: Estudiantes de múltiples cohortes y programas
+
+🎯 VARIABLE OBJETIVO (Target):
+  • Dropout: 1,421 casos (32.1%)
+  • Graduate: 2,209 casos (49.9%)
+  • Enrolled: 794 casos (17.9%)
+
+  ⚠️ DESBALANCE DE CLASES: Moderado
+
+🔗 FEATURES MÁS RELEVANTES (Top 6 por Correlación):
+  1. Curricular units 2nd sem (approved): 0.624
+  2. Curricular units 2nd sem (grade): 0.567
+  3. Curricular units 1st sem (approved): 0.529
+  4. Curricular units 1st sem (grade): 0.485
+  5. Tuition fees up to date: 0.410
+  6. Scholarship holder: 0.298
+
+🚨 OUTLIERS DETECTADOS:
+  • Método IQR (1.5 × IQR)
+  • Features con outliers: 28
+  • Acción: Mantener outliers (pueden ser casos reales de deserción) o usar escalado robusto
+
+📈 DISTRIBUCIONES:
+  • Distribuciones varían significativamente entre clases
+  • Sugiere que los features tienen poder predictivo
+  • Preparar datos: escalado con StandardScaler es recomendado
+
+✅ RECOMENDACIONES PARA MODELADO:
+  1. Usar StandardScaler para normalizar features
+  2. Considerar técnicas de manejo de desbalance (si aplica)
+  3. Validar con XGBoost que es robusto a outliers
+  4. Usar top features para explicabilidad con SHAP
+  5. División: 70% train, 15% val, 15% test (random_state=42)
+
+═══════════════════════════════════════════════════════════════════════════════

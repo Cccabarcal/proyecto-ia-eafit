@@ -1,0 +1,79 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+RESUMEN DEL MODELADO ML
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 DATOS DE ENTRENAMIENTO:
+  • Train: 3,096 muestras
+  • Validation: 664 muestras
+  • Test: 664 muestras
+  • Features: 36
+
+🏆 MODELO 1: REGRESIÓN LOGÍSTICA (BASELINE)
+  • Algoritmo: Logistic Regression (max_iter=1000)
+  • Objective: Binary Classification
+
+  Métricas (TEST SET):
+    - Accuracy:  0.8916
+    - F1-Score:  0.8200
+    - AUC-ROC:   0.9350
+
+🎯 MODELO 2: XGBoost OPTIMIZADO (PRINCIPAL)
+  • Algoritmo: XGBoost Classifier
+  • Tuning: GridSearchCV (5-fold CV, scoring='roc_auc')
+
+  Mejores Hiperparámetros:
+    - colsample_bytree: 1.0
+    - learning_rate: 0.1
+    - max_depth: 6
+    - n_estimators: 100
+    - subsample: 1.0
+
+  Métricas por Dataset:
+    TRAIN SET:
+      - Accuracy:  0.9693
+      - F1-Score:  0.9505
+      - AUC-ROC:   0.9967
+
+    VALIDATION SET:
+      - Accuracy:  0.8840
+      - F1-Score:  0.8041
+      - AUC-ROC:   0.9301
+
+    TEST SET:
+      - Accuracy:  0.8825
+      - F1-Score:  0.8060
+      - AUC-ROC:   0.9403
+
+📈 COMPARACIÓN (XGBoost vs Baseline en TEST):
+  • Accuracy:  0.8825 vs 0.8916 → Mejora: +-1.01%
+  • F1-Score:  0.8060 vs 0.8200 → Mejora: +-1.71%
+  • AUC-ROC:   0.9403 vs 0.9350 → Mejora: +0.57%
+
+🎯 OBJETIVO INVESTIGACIÓN:
+  Pregunta: ¿AUC-ROC > 0.85?
+  Respuesta: ✅ SÍ - CUMPLIDO
+  Valor obtenido: 0.9403
+
+🔍 EXPLICABILIDAD (SHAP):
+  • Valores SHAP calculados para 664 muestras de test
+  • Top 5 Features más importantes:
+    31. Curricular units 2nd sem (approved): 1.2705
+    17. Tuition fees up to date: 0.5297
+    25. Curricular units 1st sem (approved): 0.3898
+    4. Course: 0.2632
+    20. Age at enrollment: 0.2421
+
+📦 ARTEFACTOS GUARDADOS:
+  ✓ models/best_xgboost.pkl (mejor modelo)
+  ✓ models/grid_search_results.pkl (historial búsqueda)
+  ✓ reports/03_model_comparison.csv
+  ✓ reports/03_shap_feature_importance.csv
+  ✓ figures/07_roc_curves_comparison.png
+  ✓ figures/08_confusion_matrices.png
+  ✓ figures/09_shap_feature_importance.png
+  ✓ figures/10_shap_summary_bar.png
+  ✓ figures/11_xgboost_feature_importance.png
+
+✅ MODELADO COMPLETADO
+═══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,182 @@
+
+═══════════════════════════════════════════════════════════════════════════════
+EXPLICABILIDAD CON LLM - GROQ (llama-3.1-8b-instant)
+═══════════════════════════════════════════════════════════════════════════════
+
+Pregunta de Investigación:
+¿Puede un modelo XGBoost predecir deserción con AUC > 0.85 e integrando un LLM 
+para generar explicaciones accionables?
+
+
+═══════════════════════════════════════════════════════════════════════════════
+ESTUDIANTE #1
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 PREDICCIÓN DEL MODELO:
+  • Probabilidad de Deserción: 99.78%
+  • Índice en Test Set: 192
+  • Etiqueta Real: Dropout
+  • Predicción Correcta: ✅ SÍ
+
+🔍 TOP 5 FACTORES MÁS INFLUYENTES:
+  1. Curricular units 2nd sem (approved): -1.47 (Importancia SHAP: 1.2705)
+  2. Tuition fees up to date: -2.72 (Importancia SHAP: 0.5297)
+  3. Curricular units 1st sem (approved): -1.52 (Importancia SHAP: 0.3898)
+  4. Course: 0.31 (Importancia SHAP: 0.2632)
+  5. Age at enrollment: -0.03 (Importancia SHAP: 0.2421)
+
+💬 EXPLICACIÓN DEL LLM (Groq API):
+─────────────────────────────────────────────────────────────────────────────
+**Respuesta**
+
+**1. ¿Por qué el modelo predice que este estudiante desertará?**
+
+El modelo predice que este estudiante desertará debido a una combinación de factores negativos relacionados con su desempeño académico y situaciones personales. A continuación, se destacan los aspectos más relevantes:
+
+- El estudiante no ha aprobado algunos de los cursos del segundo semestre, lo que puede indicar dificultades en el aprendizaje o falta de compromiso con la tarea escolar.
+- No ha pagado las cuotas de matrícula a tiempo, lo que puede llevar a preocupaciones financieras y distracciones en el estudio.
+- No ha aprobado algunos de los cursos del primer semestre, lo que puede reflejar insuficiencia en habilidades académicas o falta de dedicación a la tarea escolar.
+- El curso al que se ha matriculado tiene un valor positivo, lo que podría sugerir que el estudiante ha elegido un programa de estudio relevante o interesante para él, pero esto no compensa los factores negativos mencionados anteriormente.
+- La edad de inscripción del estudiante no es significativamente baja o alta en comparación con la edad promedio de sus compañeros, lo que sugiere que no hay un factor de edad específico que contribuya a su alta probabilidad de deserción.
+
+En resumen, el modelo predice que este estudiante desertará debido a una combinación de problemas académicos y financieros.
+
+**2. ¿Cuáles son los factores más críticos?**
+
+Basado en los datos proporcionados, los factores más críticos que contribuyen a la alta probabilidad de deserción del estudiante son:
+
+1. **Tuition fees up to date**: No ha pagado las cuotas de matrícula a tiempo, lo que puede llevar a preocupaciones financieras y distracciones en el estudio. (Importancia en modelo: 0.5297)
+2. **Curricular units 2nd sem (approved)**: No ha aprobado algunos de los cursos del segundo semestre, lo que puede indicar dificultades en el aprendizaje o falta de compromiso con la tarea escolar. (Importancia en modelo: 1.2705)
+3. **Curricular units 1st sem (approved)**: No ha aprobado algunos de los cursos del primer semestre, lo que puede reflejar insuficiencia en habilidades académicas o falta de dedicación a la tarea escolar. (Importancia en modelo: 0.3898)
+
+Estos tres factores son los más críticos y necesitan ser abordados de manera prioritaria.
+
+**3. ¿Qué intervenciones ACCIONABLES recomendarías?**
+
+Dada la información proporcionada, recomiendo las siguientes intervenciones:
+
+1. **Revisar el plan de estudios**: Revisar el plan de estudios del estudiante para identificar áreas de dificultad y adaptar el plan de estudios para ayudar al estudiante a mejorar su desempeño académico.
+2. **Asistencia financiera**: Proporcionar asistencia financiera o apoyo para ayudar al estudiante a pagar las cuotas de matrícula a tiempo.
+3. **Apoyo académico**: Proporcionar apoyo académico adicional, como tutorías o consultas con profesores, para ayudar al estudiante a mejorar su desempeño académico.
+4. **Reuniones regulares**: Realizar reuniones regulares con el estudiante para monitorear su progreso y proporcionar apoyo y orientación.
+
+Estas intervenciones pueden ayudar a reducir la probabilidad de deserción del estudiante y mejorar su desempeño académico.
+
+**4. ¿Cuál es el nivel de confianza en esta predicción?**
+
+La probabilidad de deserción del estudiante es del 99,78%, lo que sugiere un alto nivel de confianza en la predicción. Sin embargo, es importante recordar que la predicción no es definitiva y puede ser influenciada por factores externos no considerados en el modelo. Es importante realizar un seguimiento continuo del estudiante y ajustar las intervenciones según sea necesario.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+ESTUDIANTE #2
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 PREDICCIÓN DEL MODELO:
+  • Probabilidad de Deserción: 99.76%
+  • Índice en Test Set: 231
+  • Etiqueta Real: Dropout
+  • Predicción Correcta: ✅ SÍ
+
+🔍 TOP 5 FACTORES MÁS INFLUYENTES:
+  1. Curricular units 2nd sem (approved): -1.47 (Importancia SHAP: 1.2705)
+  2. Tuition fees up to date: -2.72 (Importancia SHAP: 0.5297)
+  3. Curricular units 1st sem (approved): -0.87 (Importancia SHAP: 0.3898)
+  4. Course: 0.18 (Importancia SHAP: 0.2632)
+  5. Age at enrollment: 1.15 (Importancia SHAP: 0.2421)
+
+💬 EXPLICACIÓN DEL LLM (Groq API):
+─────────────────────────────────────────────────────────────────────────────
+**Respuesta al análisis**
+
+**1. ¿Por qué el modelo predice que este estudiante desertará?**
+
+Según los datos, el modelo ha identificado que el estudiante #231 tiene un alto riesgo de deserción, con una probabilidad de 99.76%. Esto sugiere que el estudiante enfrenta dificultades significativas en su progreso académico. Al analizar los factores más influyentes, vemos que:
+
+* El estudiante tiene problemas con las unidades curriculares del segundo semestre, lo que indica una falta de comprensión o dificultades para seguir el ritmo de la asignatura.
+* No ha pagado sus cuotas de matrícula a tiempo, lo que puede indicar problemas económicos o prioridades en la gestión del tiempo.
+* También ha tenido dificultades con las unidades curriculares del primer semestre, lo que sugiere que necesita mayor apoyo o recursos para mejorar su comprensión.
+* A pesar de que el curso en sí no es un factor crítico, se encuentra en un rango promedio, lo que puede indicar que el estudiante no se siente motivado o comprometido con su elección de carrera.
+* El hecho de que el estudiante tenga 1.15 puntos más en la edad de inscripción, podría indicar que el estudiante se inscribió a una edad más avanzada, lo que podría afectar su capacidad para adaptarse al ritmo académico.
+
+**2. ¿Cuáles son los factores más críticos?**
+
+Según los datos, los factores más críticos son:
+
+* Unidades curriculares del segundo semestre (aprobadas) con un impacto de -1.47 y una importancia de 1.2705.
+* Cuotas de matrícula hasta la fecha con un impacto de -2.72 y una importancia de 0.5297.
+
+Estos factores indican que el estudiante enfrenta dificultades significativas en su progreso académico y necesita apoyo inmediato para mejorar su comprensión y situación económica.
+
+**3. ¿Qué intervenciones ACCIONABLES recomendarías?**
+
+Considerando los factores críticos, recomendaría las siguientes intervenciones:
+
+1. **Apoyo académico**: Proporcionar al estudiante un plan de apoyo individualizado para mejorar su comprensión de las unidades curriculares del segundo semestre. Esto podría incluir tutorías adicionales, sesiones de preguntas y respuestas, o acceso a recursos de aprendizaje en línea.
+2. **Asesoramiento financiero**: Ayudar al estudiante a gestionar sus finanzas y encontrar soluciones para pagar sus cuotas de matrícula a tiempo. Esto podría incluir planes de pago flexibles, ayuda para obtener becas o subvenciones, o referencias a recursos de asesoramiento financiero.
+3. **Motivación y compromiso**: Ayudar al estudiante a encontrar su motivación y compromiso con su elección de carrera. Esto podría incluir conversaciones con un consejero académico, exploración de opciones de carrera alternativas, o actividades de motivación y compromiso.
+
+**4. ¿Cuál es el nivel de confianza en esta predicción?**
+
+La probabilidad de deserción es de 99.76%, lo que indica un alto nivel de confianza en la predicción del modelo. Sin embargo, es importante recordar que la predicción no es definitiva y puede ser influenciada por factores externos que no se han considerado en el modelo.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+ESTUDIANTE #3
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 PREDICCIÓN DEL MODELO:
+  • Probabilidad de Deserción: 99.76%
+  • Índice en Test Set: 606
+  • Etiqueta Real: Dropout
+  • Predicción Correcta: ✅ SÍ
+
+🔍 TOP 5 FACTORES MÁS INFLUYENTES:
+  1. Curricular units 2nd sem (approved): -0.48 (Importancia SHAP: 1.2705)
+  2. Tuition fees up to date: -2.72 (Importancia SHAP: 0.5297)
+  3. Curricular units 1st sem (approved): -0.87 (Importancia SHAP: 0.3898)
+  4. Course: 0.55 (Importancia SHAP: 0.2632)
+  5. Age at enrollment: 2.60 (Importancia SHAP: 0.2421)
+
+💬 EXPLICACIÓN DEL LLM (Groq API):
+─────────────────────────────────────────────────────────────────────────────
+**Respuesta**
+
+**1. ¿Por qué el modelo predice que este estudiante desertará?**
+
+El modelo predice que este estudiante desertará debido a varios factores que se han identificado en su historial académico y personal. A continuación, se presentan los motivos más relevantes:
+
+- **Bajos resultados académicos**: El estudiante tiene una baja tasa de aprobación en las unidades curriculares del segundo semestre (-0,48) y también en el primer semestre (-0,87). Esto sugiere que está experimentando dificultades en la comprensión y aplicación de los conceptos académicos.
+- **Problemas con el pago de matrículas**: El estudiante no ha pagado sus matrículas a tiempo (-2,72), lo que puede indicar problemas financieros o falta de planificación.
+- **Edad de inscripción**: El estudiante se inscribió a una edad relativamente avanzada (2,60), lo que puede sugerir que se ha retrasado en su educación y necesita recuperar tiempo perdido.
+
+**2. ¿Cuáles son los factores más críticos?**
+
+Los factores más críticos en la predicción de deserción para este estudiante son:
+
+- **Bajos resultados académicos en el segundo semestre**: La baja tasa de aprobación en este semestre (-0,48) es el factor más importante en la predicción de deserción, con una importancia del 1,2705 en el modelo.
+- **Problemas con el pago de matrículas**: La falta de pago de matrículas a tiempo (-2,72) es el segundo factor más importante, con una importancia del 0,5297 en el modelo.
+
+**3. ¿Qué intervenciones ACCIONABLES recomendaría?**
+
+Basándome en los datos y factores críticos identificados, recomendaría las siguientes intervenciones:
+
+- **Apoyo académico**: Ofrecer al estudiante apoyo académico adicional, como tutorías personalizadas o sesiones de tutoría grupal, para ayudarlo a mejorar sus resultados académicos en el segundo semestre.
+- **Ayuda financiera**: Ayudar al estudiante a encontrar recursos financieros para pagar sus matrículas a tiempo, o ofrecer opciones de pago flexibles.
+- **Asesoramiento**: Ofrecer al estudiante asesoramiento sobre su plan de estudios y cómo recuperar tiempo perdido, así como apoyo para planificar su futuro educativo.
+
+**4. ¿Cuál es el nivel de confianza en esta predicción?**
+
+La probabilidad de deserción para este estudiante es del 99,76%, lo que indica un alto nivel de confianza en la predicción del modelo. Sin embargo, es importante tener en cuenta que la predicción no es infalible y hay factores que pueden influir en la decisión del estudiante de desertar o no.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+CONCLUSIÓN
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ Se ha demostrado la integración exitosa de:
+   1. Modelo XGBoost para predicción de deserción
+   2. SHAP para explicabilidad de features
+   3. LLM (Groq) para generar recomendaciones accionables
+
+El LLM proporciona contexto educativo y recomendaciones específicas basadas en
+los datos del estudiante, permitiendo intervenciones personalizadas.
