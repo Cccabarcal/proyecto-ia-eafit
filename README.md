@@ -113,10 +113,7 @@ jupyter notebook
 - ✅ Detección de outliers
 - ✅ 5 figuras PNG para informe
 
-**Commit:**
-```bash
-git commit -m "feat(EDA): Análisis exploratorio completo"
-```
+
 
 ### PASO 2: Preprocesamiento (02_preprocessing.ipynb)
 - ✅ Binarización: Dropout=1, resto=0
@@ -124,10 +121,7 @@ git commit -m "feat(EDA): Análisis exploratorio completo"
 - ✅ StandardScaler (μ≈0, σ≈1)
 - ✅ Split 70/15/15 (estratificado, random_state=42)
 
-**Commit:**
-```bash
-git commit -m "feat(preprocessing): Pipeline de transformación de datos"
-```
+
 
 ### PASO 3: Modelado ML (03_modeling.ipynb)
 - ✅ Baseline: Logistic Regression
@@ -144,10 +138,7 @@ git commit -m "feat(preprocessing): Pipeline de transformación de datos"
 
 **Mejora:** +3.33% Accuracy, +3.68% F1, +6.56% AUC ✅
 
-**Commit:**
-```bash
-git commit -m "feat(modeling): XGBoost + SHAP explicabilidad"
-```
+
 
 ### PASO 4: LLM Explicabilidad (04_llm_rag_agents.ipynb)
 - ✅ Integración Groq API (llama-3.1-8b-instant)
@@ -162,10 +153,7 @@ git commit -m "feat(modeling): XGBoost + SHAP explicabilidad"
 echo "GROQ_API_KEY=gsk_tu_api_key" > .env
 ```
 
-**Commit:**
-```bash
-git commit -m "feat(llm): Explicabilidad con Groq API"
-```
+
 
 ## 📈 Resultados Principales
 

@@ -8,5 +8,8 @@ xgboost
 shap
 groq
 python-dotenv
+tensorflow
+sentence-transformers
+faiss-cpu
 jupyter
 ipython
