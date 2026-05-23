@@ -249,6 +249,9 @@ git push
 **Cristian Cabarcas** **Juan David Ortiz**
 Proyecto Final - Inteligencia Artificial EAFIT 2026-1
 
+Video Explicacion:
+
+https://youtu.be/dKdfZEJWwWg
 
 
 **Última actualización:** Mayo 2026
