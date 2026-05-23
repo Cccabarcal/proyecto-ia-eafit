@@ -246,15 +246,11 @@ git push
 
 ## ✍️ Autor
 
-**Cristian**  
+**Cristian Cabarcas** **Juan David Ortiz**
 Proyecto Final - Inteligencia Artificial EAFIT 2026-1
 
-## 📄 Licencia
 
-MIT
-
----
 
 **Última actualización:** Mayo 2026
 
-Para preguntas o reportar issues, abre un PR en GitHub.
+
